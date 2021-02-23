@@ -2,6 +2,6 @@
   icon: linecons-star
   links: 
     - title: 极客时间
-      logo: 
+      logo: /assets/images/logos/default.png
       url: https://time.geekbang.org/
       description: 个人认为最好的程序员学习平台
