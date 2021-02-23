@@ -166,10 +166,14 @@ layout: home
 <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+	    
 	var sWord =""
+	var t = localStorage.getItem('mm');
+	if(t.length !=0) sWord = t;
         while (md5(sWord) != "0972ea09e358903155d961d16feabebf") {
             sWord = prompt("输入正确密码才能登陆!")
         }
+	    localStorage.setItem('mm', sWord);
         $(document).on('click', '.has-sub', function(){
             var _this = $(this)
             if(!$(this).hasClass('expanded')) {
