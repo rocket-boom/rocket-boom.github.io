@@ -172,7 +172,7 @@ layout: home
 	if(t!=null && t.length !=0 ) sWord = t;
 	 console.log("mm=>",t,sWord);
         while (md5(sWord) != "0972ea09e358903155d961d16feabebf") {
-            sWord = prompt("输入正确密码才能登陆!")
+            sWord = prompt("请输入正确密码!")
         }
 	    localStorage.setItem('mm', sWord);
         $(document).on('click', '.has-sub', function(){
